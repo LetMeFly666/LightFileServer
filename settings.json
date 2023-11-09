@@ -1,0 +1,7 @@
+{
+    "ip": "0.0.0.0",
+    "port": "80",
+    "folders": [
+        {"path": "F:/LetMeFly/文件/SharedFolder", "name": "日常共享"}
+    ]
+}
