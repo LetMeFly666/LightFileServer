@@ -15,17 +15,31 @@ a light file server by python flask
     {
         "ip": "0.0.0.0",  // 服务运行的ip地址
         "port": "80",     // 服务开放的端口
-        "folders": [      // 要共享的文件夹
-            {"path": "F:/LetMeFly/文件/SharedFolder", "name": "日常共享"},
-            {"path": "F:/LetMeFly/文件/EnglishPPT", "name": "英语课PPT"}
-            // {"path": "共享路径", "name": "显示名称"}
-        ]
+        "folders": {      // 要共享的文件夹
+            "日常共享": "F:/LetMeFly/文件/SharedFolder",
+            "英语课PPT": "F:/LetMeFly/文件/EnglishPPT"
+            // "name": "path"
+        }
     }
     ```
 4. 开放对应端口：请保证配置文件中的端口可以被其他主机访问
 5. 运行服务：```python server.py```
 
 这样，在```settings.json > folders```中的所有```path```及其子目录中的文件都能被```settings.json > ip```的```settings.json > port```端口访问到。
+
+## 使用效果
+
+若路径配置错误：
+
+```
+CONFIG error! '英语课PPT' -> 'F:/LetMeFly/文件/EnglishPPT' not exists
+```
+
+若配置正确：
+
+![demo.gif](docs/img/demo.gif)
+
+**大道至简，返璞归真。**
 
 ## 后记
 
