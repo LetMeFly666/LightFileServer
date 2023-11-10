@@ -41,6 +41,14 @@ CONFIG error! '英语课PPT' -> 'F:/LetMeFly/文件/EnglishPPT' not exists
 
 **大道至简，返璞归真。**
 
+## 关于Windows
+
+启动服务可以运行```docs/windows/fileserver.bat```，关闭服务可以运行```docs/windows/fileserver-stop.bat```。
+
+若想要开机自启可以为```docs/windows/fileserver.bat```创建一个快捷方式并移动到“开机自启目录”下。关于开机自启目录，可以```Win + R -> shell:startup -> enter```打开。
+
+在写```fileserver-stop.bat```的时候[这篇文章](https://www.jb51.net/article/29323.htm)帮助了我很多。
+
 ## 后记
 
 这段代码是怎么来的呢？本蒟蒻参与了一门需要自己制作PPT并在课堂上展示的英语课。英语老师为防止电脑中病毒仅允许使用格式化后的U盘往电脑上拷贝PPT。
